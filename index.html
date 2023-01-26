@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <i class="header-logo">&lt;/tg&gt;</i>
+            <i class="menuBurguer"><img src="menu_FILL0_wght400_GRAD0_opsz40.svg" alt="menu" title="menu"></i>
+        </div>
+        
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a class="nav-a" href="#sobre">Sobre mim</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="#contatos">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <a name="sobre"></a>
+            <div class="container-main">
+                <h1 class="h1-main">Olá, meu nome é <span class="nome">Tiago Souza</span>Sou Web Developer e esse é meu Portfólio.</h1>
+                <div class="img-main"></div>
+            </div>
+            <section class="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Desenvolvedor Front End, sempre em busca de conhecimento, acredito que a melhor forma de aprender é praticando e convivendo com os melhores profissionais. A tecnologia é fundamental para empresas que querem se destacar no mercado, como desenvolvedor quero fazer parte dessa revolução tecnológica.</p>
+            </section>
+        
+        <section class="habilidades">
+            <a name="habilidades"></a>
+            <h2>Habilidades</h2>
+            <div class="container-habilidades">
+                <div class="div-habilidades">
+                    <code>HTML</code>
+                    <img src="html-1.svg" alt="html" title="html">
+                </div>
+                <div class="div-habilidades">
+                    <code>CSS</code>
+                    <img src="css-3.svg" alt="css" title="css">
+                </div>
+                <div class="div-habilidades">
+                    <code>Javascript</code>
+                    <img src="javascript-1.svg" alt="javascript" title="javascript">
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos">
+            <a name="projetos"></a>
+            <h2>Projetos</h2>
+            <div class="container-projetos">
+                <div class="box-projetos">
+                    <p>Um novo Projeto <span>Em Breve!</span></p>
+                </div>
+                <div class="box-projetos">
+                    <p>Um novo Projeto <span>Em Breve!</span></p>
+                </div>
+                <div class="box-projetos"> 
+                    <p>Um novo Projeto <span>Em Breve!</span></p>
+                </div>
+                <div class="box-projetos">
+                    <p>Um novo Projeto <span>Em Breve!</span></p>
+                </div>
+            </div>
+            
+
+        </section>
+    </main>
+    <footer class="footer">
+        <a name="contatos"></a>
+        <h2>Contatos</h2>
+        
+        <ul class="contatos">
+            <li>
+                <p>Telefone: (61)9 9316-0984</p>
+            </li>
+            <div class="container-redes-sociais">
+                <li>
+                    <a href="https://www.linkedin.com/in/tiago-psouza-546706246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqsrilzTQRMuf9gFkP8d%2FoA%3D%3D" target="_blank"><img src="icons8-linkedin-circundado-40.svg" alt="linkedin"></a>
+            </li>
+            <li>
+                    <a href="https://github.com/TiagoPSouza" target="_blank"><img src="icons8-github-40.svg" alt="github"></a>
+            </li>
+            </div>
+            
+        </ul>
+    </footer>
+
+    <script>
+     (function(){
+        function menuBurguer() {
+            const $menu = document.querySelector(".menuBurguer");
+            const $nav = document.querySelector(".nav");
+
+            $menu.addEventListener("click", function(){
+                console.log("oi")
+                if($nav.style.display === "block") {
+                    $nav.style.display = "none"
+                } else {
+                    $nav.style.display = "block"
+                }
+            })
+        }
+        
+        menuBurguer();
+
+     })()
+    </script>
+</body>
+</html>
