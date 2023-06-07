@@ -133,10 +133,16 @@
     border-top: 2px solid var(--verde);
 }
 
+.box-projetos img{
+    background-position: cover;
+    width: 350px;
+    height: 260px;
+}
+
 .box-projetos{
     border: 2px solid var(--verde);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 30px auto;
     border-radius: 30px;
     background: var(--marromEscuro);
@@ -172,6 +178,52 @@
 
 .box-projetos p span{
     position: relative;
+}
+
+.container-box{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container-box-p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    color: var(--verdeClaro);
+}
+
+.container-box-content{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.container-box-content a{
+    display: inline-block;
+    text-decoration: none;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+.container-box-content a span{
+    font-weight: bold;
+    color: var(--marrom);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.container-box-content a span:hover{
+    color: var(--marromEscuro);
+}
+
+.container-box-content a p{
+    color: var(--verdeClaro);
+    width: inherit;
+    display: inline-block;
+    padding: 0;
 }
 
 @keyframes typing{
@@ -286,9 +338,7 @@
         border-top: 1px solid var(--verde);
     }
 
-    .container-projetos{
-        display: flex;
-    }
+    
 
     .footer{
         padding: 10px;
